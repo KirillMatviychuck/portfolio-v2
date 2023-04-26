@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
-import { Header } from "./common/components/Header/Header";
-import { Home } from "./pages/Home/Home";
-import { AboutMe } from "./pages/AboutMe/AboutMe";
-import { Resume } from "./pages/Resume/Resume";
-import { MyProjects } from "./pages/MyProjects/MyProjects";
-import { Contacts } from "./pages/Contacts/Contacts";
+import { Header } from "../Header/Header";
+import { Home } from "../../../pages/Home/Home";
+import { AboutMe } from "../../../pages/AboutMe/AboutMe";
+import { Resume } from "../../../pages/Resume/Resume";
+import { MyProjects } from "../../../pages/MyProjects/MyProjects";
+import { Contacts } from "../../../pages/Contacts/Contacts";
 
 export const App = () => {
   return (
