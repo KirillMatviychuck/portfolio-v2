@@ -8,7 +8,7 @@ import { Contacts } from "../../../pages/Contacts/Contacts";
 
 export const App = () => {
   return (
-    <div className="flex flex-col bg-gray-800">
+    <div className="flex flex-col bg-gray-700">
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />

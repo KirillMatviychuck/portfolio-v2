@@ -1,11 +1,11 @@
-import bgImage from '../../assets/images/main-background/main-background.jpg'
-// @ts-ignoreya
-import ReactTypingEffect from 'react-typing-effect';
+import { Description } from "./Description/Description"
+import { Photo } from "./Photo/Photo"
 
 export const Home = () => {
     return (
-        <div className="w-full h-[91.4vh] bg-gray-700 flex flex-col justify-center items-center">
-
+        <div className="w-full h-[91.4vh] w-[70%] bg-gray-700 flex justify-around items-center self-center">
+            <Description />
+            <Photo />
         </div>
     )
 }
