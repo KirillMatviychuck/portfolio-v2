@@ -3,7 +3,7 @@ import { Photo } from "./Photo/Photo"
 
 export const Home = () => {
     return (
-        <div className="w-full h-[91.4vh] w-[70%] bg-gray-700 flex justify-around items-center self-center">
+        <div className="h-[91.4vh] w-[70%] bg-gray-800 flex justify-between items-center self-center">
             <Description />
             <Photo />
         </div>

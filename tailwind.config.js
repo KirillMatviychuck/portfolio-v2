@@ -7,7 +7,17 @@ module.exports = {
     fontFamily: {
       sans: ['Poppins', 'sans-serif']
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        wiggle: {
+          '0%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-24px)' },
+          '100%': { transform: 'translateY(0)' },
+
+
+        }
+      }
+    },
   },
   plugins: [],
 }
