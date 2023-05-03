@@ -9,10 +9,10 @@ const Slide = require('react-reveal/Slide')
 
 export const Description = () => {
     return (
-        <div className="text-white w-1/2 flex flex-col h-[45%] justify-between relative">
-            <Slide left>
+        <Slide left cascade>
+            <div className="w-1/2 flex flex-col h-[45%] justify-between relative text-white">
                 <h3 className="text-4xl font-bold">Hello, It's me</h3>
-                <h1 className="text-5xl font-bold">Kirill Matviichuck</h1>
+                <h1 className="text-5xl font-bold">Kirill <label>&nbsp;<span className="text-cyan-400 font-bold">Matviichuk</span></label></h1>
                 <h3 className="text-4xl font-bold">And I'm a
                     <span className="text-cyan-400 ml-2">
                         <ReactTypingEffect
@@ -21,21 +21,20 @@ export const Description = () => {
                         />
                     </span>
                 </h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Assumenda vero minus architecto libero tempora unde optio aut fuga
+                <p className="text-lg">
+                    I am a person with great passion for programming. Always interested
+                    in learning something new and improving the skills I already have.
                 </p>
                 <div className="flex">
-
                     <Socials children={<Linkedin fill='white' />} socialLink='https://www.linkedin.com/in/kirill-matviichuk/' />
                     <Socials children={<Telegram fill='white' />} socialLink='https://t.me/kirillmt' />
                     <Socials children={<Facebook fill='white' />} socialLink='https://www.facebook.com/profile.php?id=100009204488025' />
                     <Socials children={<Instagram fill='white' />} socialLink='https://www.instagram.com/kirill.mt/' />
-
                 </div>
-                <a href="https://cv.djinni.co/fe/f1ecfc2f8bbb5c8e13f5b4e44ad871/CV_Kirill_Matviichuk.pdf" target='_blank' rel="noopener noreferrer" className="block flex justify-center items-center w-[170px] h-[45px] py-4 px-4 bg-cyan-400 rounded-full text-gray-800 font-bold tracking-wide hover:text-white relative z-10">Download CV</a>
-                <a href="#" className="block flex justify-center items-center w-[170px] h-[45px] py-4 px-4 bg-cyan-400 rounded-full text-gray-800 font-bold tracking-wide hover:text-white absolute bottom-0 left-0 blur z-0">Download CV</a>
-            </Slide>
-        </div>
+                <a href="https://cv.djinni.co/fe/f1ecfc2f8bbb5c8e13f5b4e44ad871/CV_Kirill_Matviichuk.pdf" target='_blank' rel="noopener noreferrer" className="flex justify-center items-center w-[170px] h-[45px] py-4 px-4 bg-cyan-400 rounded-full text-gray-800 font-bold tracking-wide hover:text-white relative z-10">Download CV</a>
+                <a href="https://cv.djinni.co/fe/f1ecfc2f8bbb5c8e13f5b4e44ad871/CV_Kirill_Matviichuk.pdf" className="flex justify-center items-center w-[170px] h-[45px] py-4 px-4 bg-cyan-400 rounded-full text-gray-800 font-bold tracking-wide hover:text-white absolute bottom-0 left-0 blur z-0">Download CV</a>
+            </div>
+        </Slide>
+
     )
 } 
