@@ -13,7 +13,7 @@ export const AboutMeDescription = () => {
                     <label>&nbsp;<span className="text-cyan-400 font-semibold">
                         React, Redux, ReduxToolkit, TypeScript, Material UI
                     </span>&nbsp;</label>
-                    and other technologies.Now I am improving my skills in
+                    and other technologies. Now I am improving my skills in
                     this direction and extending them with new technologies.<br />
                     My next goal is to learn Node.js, to become a Full-Stack Developer.
                 </p>
