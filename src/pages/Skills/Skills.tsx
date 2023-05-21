@@ -18,8 +18,8 @@ export const Skills = () => {
                     <h1 className="text-5xl font-semibold">My <span className="text-cyan-400">Skills</span></h1>
                 </Flip>
                 <Flip left>
-                    <div className="w-full flex justify-between justify-self-">
-                        {skillsStore.map(skill => <Skill description={skill.description} title={skill.title} svgPath={skill.svgPath} />)}
+                    <div className="w-full flex justify-between">
+                        {skillsStore.map((skill, index) => <Skill key={index} description={skill.description} title={skill.title} svgPath={skill.svgPath} />)}
                     </div>
                 </Flip>
 
