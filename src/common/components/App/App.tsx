@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import { Header } from "../Header/Header";
 import { Home } from "../../../pages/Home/Home";
 import { AboutMe } from "../../../pages/AboutMe/AboutMe";
@@ -11,7 +11,8 @@ export const App = () => {
     <div className="flex flex-col bg-gray-800">
       <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Navigate to={'/portfolio-v2'} />} />
+        <Route path='/portfolio-v2' element={<Home />} />
         <Route path='/about' element={<AboutMe />} />
         <Route path='/skills' element={<Skills />} />
         <Route path='/projects' element={<MyProjects />} />
