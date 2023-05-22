@@ -1,0 +1,9 @@
+{
+  "short_name": "Front-end developer portfolio",
+  "name": "Front-end developer portfolio",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

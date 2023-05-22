@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio-v2/static/css/main.5559de2b.css",
+    "main.js": "/portfolio-v2/static/js/main.94be32cf.js",
+    "static/media/todolist.jpg": "/portfolio-v2/static/media/todolist.34a5ff693ec48e41da05.jpg",
+    "static/media/me1.png": "/portfolio-v2/static/media/me1.9e9f385e6373d2a35f26.png",
+    "static/media/movieLand.jpg": "/portfolio-v2/static/media/movieLand.9e7ec73d281ba9013596.jpg",
+    "static/media/socialnet.jpg": "/portfolio-v2/static/media/socialnet.8684d5e15b83c67211fe.jpg",
+    "static/media/currencyConv.jpg": "/portfolio-v2/static/media/currencyConv.d3d0f86ad6f9c60c34ce.jpg",
+    "static/media/passgenerator.png": "/portfolio-v2/static/media/passgenerator.cd77082c3715f8050174.png",
+    "static/media/taskTable.jpg": "/portfolio-v2/static/media/taskTable.90fdcbbda43a1f419615.jpg",
+    "index.html": "/portfolio-v2/index.html",
+    "static/media/instagram.svg": "/portfolio-v2/static/media/instagram.365dd76cf26db134552b33eace85d920.svg",
+    "static/media/telegram.svg": "/portfolio-v2/static/media/telegram.a6233c538a9702524fd1f45d9a7b2c02.svg",
+    "static/media/linkedin.svg": "/portfolio-v2/static/media/linkedin.675806ed35d17d1ce1e6a22d057bce28.svg",
+    "static/media/facebook.svg": "/portfolio-v2/static/media/facebook.a73b064899837638ebd2eea2b28d732e.svg",
+    "main.5559de2b.css.map": "/portfolio-v2/static/css/main.5559de2b.css.map",
+    "main.94be32cf.js.map": "/portfolio-v2/static/js/main.94be32cf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5559de2b.css",
+    "static/js/main.94be32cf.js"
+  ]
+}
