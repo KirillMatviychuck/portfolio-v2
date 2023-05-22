@@ -5,7 +5,8 @@ import passGen from "../../assets/images/my-projects/passgenerator.png"
 import currencyConv from "../../assets/images/my-projects/currencyConv.jpg"
 import todolist from "../../assets/images/my-projects/todolist.jpg"
 import taskTable from "../../assets/images/my-projects/taskTable.jpg"
-
+const Zoom = require('react-reveal/Zoom')
+const Flip = require('react-reveal/Flip')
 
 const projectsStore = [
     { title: "Social Network", picture: socialNet, description: "Social network app with using react hooks, routing, working with REST API, using unit tests for code workability", porjectLink: "https://kirillmatviychuck.github.io/login" },
@@ -20,17 +21,21 @@ export const MyProjects = () => {
     return (
         <div className="h-[91.4vh] w-[70%] bg-gray-800 flex flex-col items-center self-center text-white">
             <div className="h-[90%] w-full flex flex-col items-center">
-                <h1 className="text-5xl font-semibold mt-12 mb-20">Latest <span className="text-cyan-400">Projects</span></h1>
+                <Flip top>
+                    <h1 className="text-5xl font-semibold mt-12 mb-20">Latest <span className="text-cyan-400">Projects</span></h1>
+                </Flip>
                 <div className="flex flex-wrap justify-between items-center">
-                    {projectsStore.map((project, index) => (
-                        <ProjectItem key={index}
-                            picture={project.picture}
-                            title={project.title}
-                            projectLink={project.porjectLink}
-                            projectDescription={project.description} />
-                    ))}
+                    <Zoom>
+                        {projectsStore.map((project, index) => (
+                            <ProjectItem key={index}
+                                picture={project.picture}
+                                title={project.title}
+                                projectLink={project.porjectLink}
+                                projectDescription={project.description} />
+                        ))}
+                    </Zoom>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
