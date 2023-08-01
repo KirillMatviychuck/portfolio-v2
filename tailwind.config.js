@@ -16,6 +16,9 @@ module.exports = {
 
 
         }
+      },
+      screens: {
+        '2sm': { 'max': '1275px' }
       }
     },
   },
