@@ -10,8 +10,8 @@ const Slide = require('react-reveal/Slide')
 export const Description = () => {
     return (
         <Slide left cascade>
-            <div className="w-1/2 flex flex-col min-h-[380px] justify-between relative text-white 
-            2sm:items-center 2sm:w-full">
+            <div className="w-1/2 flex flex-col h-[380px] justify-between relative text-white 
+            2sm:items-center 2sm:w-full 2sm:h-[340px]">
                 <h3 className="text-4xl font-bold 2sm:text-lg">Hello, It's me</h3>
                 <h1 className="text-5xl font-bold 2sm:text-lg">Kirill <label>&nbsp;<span className="text-cyan-400 font-bold">Matviichuk</span></label></h1>
                 <h3 className="text-4xl font-bold 2sm:text-base">And I'm a
