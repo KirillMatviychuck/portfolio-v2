@@ -4,7 +4,7 @@ const Fade = require('react-reveal/Fade')
 
 export const AboutMeDescription = () => {
     return (
-        <Fade bottom>
+        <Fade>
             <div className="w-1/2 flex flex-col h-[40%] justify-between text-white relative">
                 <h1 className="text-5xl font-bold">About <span className="text-cyan-400">Me</span></h1>
                 <h2 className="text-3xl font-bold">Frontend Developer!</h2>
