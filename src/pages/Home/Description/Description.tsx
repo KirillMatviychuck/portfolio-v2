@@ -32,8 +32,10 @@ export const Description = () => {
                     <Socials children={<Facebook fill='white' />} socialLink='https://www.facebook.com/profile.php?id=100009204488025' />
                     <Socials children={<Instagram fill='white' />} socialLink='https://www.instagram.com/kirill.mt/' />
                 </div>
-                <a href="https://cv.djinni.co/fe/f1ecfc2f8bbb5c8e13f5b4e44ad871/CV_Kirill_Matviichuk.pdf" target='_blank' rel="noopener noreferrer" className="flex justify-center items-center w-[170px] h-[45px] py-4 px-4 bg-cyan-400 rounded-full text-gray-800 font-bold tracking-wide hover:text-white relative z-10">Download CV</a>
-                <a href="https://cv.djinni.co/fe/f1ecfc2f8bbb5c8e13f5b4e44ad871/CV_Kirill_Matviichuk.pdf" className="flex justify-center items-center w-[170px] h-[45px] py-4 px-4 bg-cyan-400 rounded-full text-gray-800 font-bold tracking-wide hover:text-white absolute bottom-0 left-0 blur z-0 2sm:left-12">Download CV</a>
+                <div>
+                    <a href="https://cv.djinni.co/fe/f1ecfc2f8bbb5c8e13f5b4e44ad871/CV_Kirill_Matviichuk.pdf" target='_blank' rel="noopener noreferrer" className="flex justify-center items-center w-[170px] h-[45px] py-4 px-4 bg-cyan-400 rounded-full text-gray-800 font-bold tracking-wide hover:text-white relative z-10">Download CV</a>
+                    <a href="https://cv.djinni.co/fe/f1ecfc2f8bbb5c8e13f5b4e44ad871/CV_Kirill_Matviichuk.pdf" className="flex justify-center items-center w-[170px] h-[45px] py-4 px-4 bg-cyan-400 rounded-full text-gray-800 font-bold tracking-wide hover:text-white absolute bottom-0 left-0 blur z-0">Download CV</a>
+                </div>
             </div>
         </Slide>
 
