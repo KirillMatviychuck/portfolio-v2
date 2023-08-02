@@ -16,7 +16,7 @@ export const ContactForm = () => {
     });
     return (
         <form className="w-full flex flex-col justify-center items-center text-white" onSubmit={formik.handleSubmit}>
-            <div className="flex justify-between mb-[6px] w-1/2">
+            <div className="flex justify-between mb-[6px] 2sm:w-full">
                 <input
                     className="w-[49%] h-[55px] bg-gray-700 p-3 rounded-lg outline-none"
                     placeholder='Full Name'
@@ -36,7 +36,7 @@ export const ContactForm = () => {
                     value={formik.values.emailAddress}
                 />
             </div>
-            <div className="flex justify-between mb-[6px] mt-[6px] w-1/2">
+            <div className="flex justify-between mb-[6px] mt-[6px] w-1/2 2sm:w-full">
                 <input
                     className="w-[49%] h-[55px] bg-gray-700 p-3 rounded-lg outline-none"
                     placeholder="Mobile Number"
@@ -57,7 +57,7 @@ export const ContactForm = () => {
                 />
             </div>
             <textarea
-                className="h-72 w-1/2 mb-[6px] mt-[6px] bg-gray-700 p-3 rounded-lg outline-none"
+                className="h-72 w-1/2 mb-[6px] mt-[6px] bg-gray-700 p-3 rounded-lg outline-none 2sm:w-full"
                 placeholder="Your Message"
                 id="message"
                 name="message"
