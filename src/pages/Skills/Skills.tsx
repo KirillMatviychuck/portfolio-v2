@@ -1,6 +1,6 @@
 import { Skill } from "../../common/components/Skill/Skill"
 
-const Flip = require('react-reveal/Flip')
+const Fade = require('react-reveal/Fade')
 
 
 const skillsStore = [
@@ -14,14 +14,14 @@ export const Skills = () => {
     return (
         <div className="h-[91.4vh] w-[70%] bg-gray-800 flex flex-col items-center self-center text-white 2sm:h-max">
             <div className="h-[80%] w-full flex flex-col items-center justify-around">
-                <Flip top>
+                <Fade top>
                     <h1 className="text-5xl font-semibold 2sm:my-6">My <span className="text-cyan-400">Skills</span></h1>
-                </Flip>
-                <Flip left>
-                    <div className="w-full flex justify-between 2sm:flex-col">
+                </Fade>
+                <Fade left>
+                    <div className="w-full flex justify-between items-center 2sm:flex-col">
                         {skillsStore.map((skill, index) => <Skill key={index} description={skill.description} title={skill.title} svgPath={skill.svgPath} />)}
                     </div>
-                </Flip>
+                </Fade>
 
             </div>
         </div>

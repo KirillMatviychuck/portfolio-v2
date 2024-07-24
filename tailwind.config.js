@@ -19,7 +19,10 @@ module.exports = {
       },
       screens: {
         '2sm': { 'max': '1275px' },
-        'smm': {'min': '375px'}
+        'smm': {'min': '375px'},
+        'tablet': {'min': '640px'},
+        'laptop': {'min': '1024px'},
+        
       }
     },
   },
