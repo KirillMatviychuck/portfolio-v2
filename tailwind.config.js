@@ -22,6 +22,7 @@ module.exports = {
         'smm': {'min': '375px'},
         'tablet': {'min': '640px'},
         'laptop': {'min': '1024px'},
+        'phoneMax': {'max': '400px'}
         
       }
     },
