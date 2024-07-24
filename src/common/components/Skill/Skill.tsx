@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 
 export const Skill: FC<Props> = ({ svgPath, title, description }) => {
     return (
-        <div className="h-[425px] w-[325px] flex flex-col justify-between items-center bg-gray-700 p-[20px] rounded-[20px] 2sm:mt-4">
+        <div className="h-[425px] w-[325px] flex flex-col justify-between items-center bg-gray-700 p-[20px] rounded-[20px] 2sm:mt-4 2sm:w-full">
             <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" style={{ fill: "rgb(30, 229, 255)" }} viewBox="0 0 24 24" ><path d={svgPath}></path></svg>
             <h1 className="text-3xl font-semibold">{title}</h1>
             <p className="flex flex-col text-center">{description}</p>
