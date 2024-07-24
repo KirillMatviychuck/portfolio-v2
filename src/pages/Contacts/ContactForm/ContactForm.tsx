@@ -1,4 +1,3 @@
-import React from 'react';
 import { useFormik } from 'formik';
 
 export const ContactForm = () => {
@@ -16,7 +15,7 @@ export const ContactForm = () => {
     });
     return (
         <form className="w-full flex flex-col justify-center items-center text-white" onSubmit={formik.handleSubmit}>
-            <div className="flex justify-between mb-[6px] 2sm:w-full">
+            <div className="flex justify-between mb-[6px] mt-[6px] w-1/2 2sm:w-full">
                 <input
                     className="w-[49%] h-[55px] bg-gray-700 p-3 rounded-lg outline-none"
                     placeholder='Full Name'
