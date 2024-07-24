@@ -18,7 +18,8 @@ module.exports = {
         }
       },
       screens: {
-        '2sm': { 'max': '1275px' }
+        '2sm': { 'max': '1275px' },
+        'smm': {'min': '375px'}
       }
     },
   },
