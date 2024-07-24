@@ -6,7 +6,7 @@ export const ProjectItem: FC<Props> = ({ title, picture, projectDescription, pro
             <div className="relative flex h-full rounded-[25px] overflow-hidden transition-all duration-2~00 ease-linear hover:scale-110">
                 <img src={picture} alt="project" className="relative w-full object-cover" />
                 <div className="absolute flex flex-col items-center justify-around bottom-0 left-0 w-full h-full p-4 bg-gradient-to-b from-cyan-500 to-transparent">
-                    <h2 className="text-3xl font-semibold smm:text-2xl">{title}</h2>
+                    <h2 className="text-3xl font-semibold smm:text-2xl smm:jusify-center smm:items-center">{title}</h2>
                     <p className="text-center font-medium">{projectDescription}</p>
                     <a href={projectLink} className="h-12 w-12 flex justify-center items-center bg-white rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style={{ fill: "rgb(88, 88, 88)" }}>
