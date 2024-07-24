@@ -56,7 +56,7 @@ export const ContactForm = () => {
                 />
             </div>
             <textarea
-                className="h-72 w-1/2 mb-[6px] mt-[6px] bg-gray-700 p-3 rounded-lg outline-none 2sm:w-full"
+                className="h-72 w-1/2 mb-[6px] mt-[6px] bg-gray-700 p-3 rounded-lg outline-none 2sm:w-full resize-none"
                 placeholder="Your Message"
                 id="message"
                 name="message"
