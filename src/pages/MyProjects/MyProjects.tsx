@@ -1,41 +1,73 @@
-import { ProjectItem } from "../../common/components/ProjectItem/ProjectItem"
-import socialNet from "../../assets/images/my-projects/socialnet.jpg"
-import movieLand from "../../assets/images/my-projects/movieLand.jpg"
-import passGen from "../../assets/images/my-projects/passgenerator.png"
 import currencyConv from "../../assets/images/my-projects/currencyConv.jpg"
-import todolist from "../../assets/images/my-projects/todolist.jpg"
-import taskTable from "../../assets/images/my-projects/taskTable.jpg"
+import movieLand from "../../assets/images/my-projects/movieLand.jpg"
+import jwtLogo from "../../assets/images/my-projects/jwt-logo.png"
+import { ProjectItem } from "../../common/components/ProjectItem/ProjectItem"
+import { FeaturedProject } from "./FeaturedProject/FeaturedProject"
 const Zoom = require('react-reveal/Zoom')
 const Flip = require('react-reveal/Flip')
 
-const projectsStore = [
-    { title: "Movie Land", picture: movieLand, description: "My main project was created using Typescript, React, Redux-toolkit as core technologies.", porjectLink: "https://kirillmatviychuck.github.io/movie-land/" },
-    { title: "Social Network", picture: socialNet, description: "Social network app with using react hooks, routing, working with REST API, using unit tests for code workability", porjectLink: "https://kirillmatviychuck.github.io/login" },
-    { title: "Password Generator", picture: passGen, description: "Password generator with customizable values. Using TypeScript for best code control during development", porjectLink: "https://kirillmatviychuck.github.io/password-generator/" },
-    { title: "To Do List", picture: todolist, description: "Todolist app created with react hooks. routing and redirects, material UI, REST API request/response flow, unit-tests.", porjectLink: "https://kirillmatviychuck.github.io/login" },
-    { title: "Currency Convertor", picture: currencyConv, description: "Created using the open currency API, in which you can see the real exchange rate at the moment.", porjectLink: "https://kirillmatviychuck.github.io/currency-convertor/" },
-    { title: "Task-table", picture: taskTable, description: "Editable table of tasks in which you can add, delete a task, assign an executor, and other functions", porjectLink: "https://kirillmatviychuck.github.io/task-table/" },
-]
-
 export const MyProjects = () => {
+
+    const mainProject = {
+        title: "Movie Land",
+        picture: movieLand,
+        description:
+            `Production-quality movie discovery SPA built with React, TypeScript, and Redux Toolkit.
+            Features TMDB API integration, search, pagination, animated transitions, and scalable Redux 
+            architecture. Tech: React, TypeScript, Redux Toolkit, React Router, Material UI, SCSS, Axios,
+             Framer Motion.`,
+        projectLink: "https://kirillmatviychuck.github.io/movie-land/",
+    };
+    const additionalProjects = [
+        {
+            title: "JWT Authentication System",
+            picture: jwtLogo,
+            description:
+                "Full-stack JWT authentication system",
+            projectLink: "https://kirillmatviychuck.github.io/password-generator/",
+        },
+        {
+            title: "Currency Convertor",
+            picture: currencyConv,
+            description:
+                "Currency converter using external API integration to display current exchange rates.",
+            projectLink: "https://kirillmatviychuck.github.io/currency-convertor/",
+        },
+    ];
+
     return (
-        <div className="h-[91.4vh] w-[70%] bg-gray-800 flex flex-col items-center self-center text-white 2sm:h-max">
-            <div className="h-[90%] w-full flex flex-col items-center">
-                <Flip top>
-                    <h1 className="text-5xl font-semibold mt-12 mb-20 2sm:text-center">Latest <span className="text-cyan-400">Projects</span></h1>
-                </Flip>
-                <div className="flex flex-wrap justify-between items-center">
-                    <Zoom>
-                        {projectsStore.map((project, index) => (
+        <div className="h-[93vh] w-[50%] bg-gray-800 flex flex-col items-center self-center text-white 2sm:h-max">
+            <Flip top>
+                <h1 className="text-5xl font-semibold mt-12 mb-12 2sm:text-center">
+                    Latest <span className="text-cyan-400">
+                        Projects
+                    </span>
+                </h1>
+            </Flip>
+            <div className="w-full">
+                <Zoom>
+                    <FeaturedProject
+                        title={mainProject.title}
+                        picture={mainProject.picture}
+                        description={mainProject.description}
+                        projectLink={mainProject.projectLink}
+                    />
+                </Zoom>
+                <div className="flex justify-between flex-wrap gap-5">
+                    {
+                        additionalProjects.map((project, index) => (
                             <ProjectItem key={index}
                                 picture={project.picture}
                                 title={project.title}
-                                projectLink={project.porjectLink}
-                                projectDescription={project.description} />
-                        ))}
-                    </Zoom>
+                                projectLink={project.projectLink}
+                                projectDescription={project.description}
+                            />
+                        ))
+                    }
                 </div>
+
             </div>
-        </div >
-    )
-}
+
+        </div>
+    );
+};
