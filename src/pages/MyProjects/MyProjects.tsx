@@ -24,7 +24,7 @@ export const MyProjects = () => {
             picture: jwtLogo,
             description:
                 "Full-stack JWT authentication system",
-            projectLink: "https://kirillmatviychuck.github.io/password-generator/",
+            projectLink: "https://github.com/KirillMatviychuck/jwt-practice",
         },
         {
             title: "Currency Convertor",
