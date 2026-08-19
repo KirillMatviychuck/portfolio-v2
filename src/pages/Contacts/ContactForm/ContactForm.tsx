@@ -82,7 +82,7 @@ export const ContactForm = () => {
                 </div>
                 <div className="flex gap-4 mt-8 justify-center items-center">
                     <a
-                        href="https://cv.djinni.co/37/f6ad61a1ae4a7f94c2e6348cb69ebb/Kirill_M.pdf"
+                        href="https://drive.google.com/file/d/1FG4mqkIRLcUJWodFamRMdKHisBZyZvlo/view?usp=drive_link"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="
